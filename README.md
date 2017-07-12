@@ -6,7 +6,7 @@ Se ha privilegiado la funcionalidad sobre la estética para no agregar capas de 
 Este proyecto de ejemplo acompaña la entrada de blog que está en [azuax.com](http://www.azuax.com) y corresponde a la temática de **web security** que estoy revisando.
 
 ## Configuración de prueba
-Para seguir el ejemplo, te recomiendo utilizar apache y configurar 2 *virtualhosts* que funcionarán como distintos dominios (orígenes).
+Para seguir el ejemplo, te recomiendo utilizar apache y configurar 2 *virtualhosts* que funcionarán como distintos dominios (orígenes). Clona el repositorio en tu equipo (En Linux/apache ```/var/www/html/```) y en el navegador ingresa a [http://localhost/pruebas-sop/](http://localhost/pruebas-sop/)
 
 ### uno.local
 ```
@@ -41,10 +41,10 @@ En tu tabla de hosts, tienes que configurar las referencias a tus dominios reci�
 
 ## Contribuciones
 * __azuax__
-  * Ejemplo 1
-  * Ejemplo 2
-  * Ejemplo 3
-  * Ejemplo 4
+  * Ejemplo 1. Iframe con mismo origen.
+  * Ejemplo 2. Iframe con distinto origen.
+  * Ejemplo 3. window.location, mismo origen.
+  * Ejemplo 4. window.location, distinto origen.
 
 ¿Quieres aportar con ejemplos?
 Envíame tu pull request y podemos agregarlo al repo. Tu nombre aparecerá en la lista de contribuciones.
