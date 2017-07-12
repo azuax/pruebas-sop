@@ -1,0 +1,19 @@
+body{
+    width: 800px;
+    margin: 20px auto;
+    font-family: Helvetica, Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #ff5000;
+}
+a:visited{
+    color: #ff5000;
+}
+a:hover{
+    color: #12171b;
+}
+iframe{
+    width: 100%;
+    height: 400px;
+}

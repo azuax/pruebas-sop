@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+    </head>
+    <body>
+        <p>
+            <small><a href="index.html">Volver al inicio</a></small>
+        </p>
+        <h1>Ejemplo 3 - window.location (Mismo Origen)</h1>
+        <p>
+            Página original: http://uno.local/ejemplo3.html
+        </p>
+        <p>
+            <button type="button" onclick="leerUrlIframe()">¿Leer URL del iframe?</button>
+        </p>
+        <p>&nbsp;</p>
+        <p>
+            Esto <b>NO</b> va a funcionar:
+            <button type="button" onclick="cambiarUrlIframe('http://www.azuax.com')">URL http://www.azuax.com</button>
+        </p>
+        <p>
+            Esto <b>SI</b> va a funcionar:
+            <button type="button" onclick="cambiarUrlIframe('http://www.nic.cl')">URL http://www.nic.cl</button>
+        </p>
+        <p>&nbsp;</p>
+        <p>
+            iframe: http://uno.local/ejemplo3-iframe.html
+        </p>
+        <iframe src="http://uno.local/ejemplo3-iframe.html"></iframe>
+        <script>
+            function leerUrlIframe(){
+                try{
+                    alert(window.frames[0].window.location);
+                }catch(error){
+                    alert(error);
+                }
+            }
+            function cambiarUrlIframe(newUrl){
+                try{
+                    window.frames[0].window.location = newUrl;
+                }catch(error){
+                    alert(error);
+                }
+            }
+
+        </script>
+    </body>
+</html>

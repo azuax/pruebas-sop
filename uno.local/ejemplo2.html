@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+    </head>
+    <body>
+        <p>
+            <small><a href="index.html">Volver al inicio</a></small>
+        </p>
+        <h1>Ejemplo 2 - Distinto Origen</h1>
+        <p>
+            Página original: http://uno.local/ejemplo2.html
+        </p>
+        <p>
+            Modificar el body del iframe:
+        </p>
+        <p>
+            <button type="button" onclick="modificaIframe()">Modifica</button>
+        </p>
+        <p>
+            iframe: http://dos.local/ejemplo2-iframe.html
+        </p>
+        <iframe src="http://dos.local/ejemplo2-iframe.html"></iframe>
+        <script>
+            function modificaIframe(){
+                try{
+                    window.frames[0].document.body.innerHTML = 'Contenido modificado!';
+                }catch(error){
+                    alert(error);
+                }
+            }
+        </script>
+    </body>
+</html>
